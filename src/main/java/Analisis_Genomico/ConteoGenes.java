@@ -19,7 +19,7 @@ public class ConteoGenes extends JFrame {
 
         contarGenesButton.addActionListener(e -> {
             String secuenciaADN = secuenciaADNField.getText();
-            AnalisisGenomico analisis = new AnalisisGenomico(secuenciaADN);
+            AnalisisçGenomico analisis = new AnalisisGenomico(secuenciaADN);
             int cantidadGenes = analisis.contarGenes();
             resultadoLabel.setText("Cantidad de genes: " + cantidadGenes);
         });
