@@ -6,4 +6,10 @@ public class ConteoGenes {
     public ConteoGenes(String secuenciaADN) {
         this.secuenciaADN = secuenciaADN;
     }
+
+    public int contarGenes() {
+        return contarGenesRecursivo(secuenciaADN);
+    }
+
+    
 }
