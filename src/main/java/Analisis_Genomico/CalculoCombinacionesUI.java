@@ -12,3 +12,15 @@ public class CalculoCombinacionesUI extends JFrame {
         setTitle("Cálculo de Combinaciones Genéticas");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+
+        modeloGeneticoField = new JTextField(20);
+        calcularCombinacionesButton = new JButton("Calcular Combinaciones");
+        resultadoLabel = new JLabel();
+
+        calcularCombinacionesButton.addActionListener(e -> {
+            String modeloGenetico = modeloGeneticoField.getText();
+            CalculoCombinaciones calculoCombinaciones = new CalculoCombinaciones(modeloGenetico);
+            // Lógica para calcular combinaciones genéticas
+            resultadoLabel.setText("Combinaciones calculadas.");
+        });
+
