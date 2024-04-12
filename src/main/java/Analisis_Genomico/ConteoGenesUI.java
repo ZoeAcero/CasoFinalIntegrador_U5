@@ -3,13 +3,13 @@ package Analisis_Genomico;
 import javax.swing.*;
 import java.awt.*;
 
-public class ConteoGenes extends JFrame {
+public class ConteoGenesUI extends JFrame {
 
     private JTextField secuenciaADNField;
     private JButton contarGenesButton;
     private JLabel resultadoLabel;
 
-    public ConteoGenes() {
+    public ConteoGenesUI() {
         setTitle("Conteo de Genes");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -56,7 +56,7 @@ public class ConteoGenes extends JFrame {
     public static void main(String[] args) {
         try {
             SwingUtilities.invokeLater(() -> {
-                ConteoGenes ui = new ConteoGenes();
+                ConteoGenesUI ui = new ConteoGenesUI();
                 ui.setVisible(true);
             });
         } catch (Exception e) {
