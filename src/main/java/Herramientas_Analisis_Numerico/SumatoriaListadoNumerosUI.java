@@ -48,4 +48,12 @@ public class SumatoriaListadoNumerosUI {
         getContentPane().add(panel, BorderLayout.NORTH);
         getContentPane().add(scrollPane, BorderLayout.CENTER);
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            SumatoriaListadoNumerosUI ui = new SumatoriaListadoNumerosUI();
+            ui.setVisible(true);
+        });
+    }
 }
+
