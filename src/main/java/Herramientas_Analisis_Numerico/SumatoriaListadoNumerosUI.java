@@ -25,7 +25,7 @@ public class SumatoriaListadoNumerosUI extends JFrame{
         calcularButton.addActionListener(e -> {
             int rangoInicial = Integer.parseInt(rangoInicialField.getText());
             int rangoFinal = Integer.parseInt(rangoFinalField.getText());
-            SumatoriaListadoNumerosUI sumatoriaListadoNumeros = new SumatoriaListadoNumerosUI();
+            SumatoriaListadoNumeros sumatoriaListadoNumeros = new SumatoriaListadoNumeros();
             List<Integer> listaNumeros = sumatoriaListadoNumeros.listarNumerosEnRango(rangoInicial, rangoFinal);
             int sumatoria = sumatoriaListadoNumeros.calcularSumatoria(listaNumeros);
             resultadoArea.setText("Números en el rango: " + listaNumeros.toString() + "\n");
