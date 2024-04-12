@@ -21,6 +21,7 @@ public class CalculoCombinacionesUI extends JFrame {
             String modeloGenetico = modeloGeneticoField.getText();
             CalculoCombinaciones calculoCombinaciones = new CalculoCombinaciones(modeloGenetico);
             // Lógica para calcular combinaciones genéticas
+            int combinaciones = calculoCombinaciones.calcular();
             resultadoLabel.setText("Combinaciones calculadas.");
         });
 
