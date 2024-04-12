@@ -24,3 +24,10 @@ public class CalculoCombinacionesUI extends JFrame {
             resultadoLabel.setText("Combinaciones calculadas.");
         });
 
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(3, 1));
+        panel.add(new JLabel("Modelo Genético:"));
+        panel.add(modeloGeneticoField);
+        panel.add(calcularCombinacionesButton);
+
