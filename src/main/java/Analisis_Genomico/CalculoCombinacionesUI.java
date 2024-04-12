@@ -40,3 +40,15 @@ public class CalculoCombinacionesUI extends JFrame {
         pack();
     }
 
+    public static void main(String[] args) {
+        try {
+            SwingUtilities.invokeLater(() -> {
+                CalculoCombinacionesUI ui = new CalculoCombinacionesUI();
+                ui.setVisible(true);
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
