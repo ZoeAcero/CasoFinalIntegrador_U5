@@ -41,4 +41,11 @@ public class SumatoriaListadoNumerosUI {
         panel.add(rangoFinalField);
         panel.add(new JLabel(""));
         panel.add(calcularButton);
+
+        JScrollPane scrollPane = new JScrollPane(resultadoArea);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.NORTH);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+    }
 }
