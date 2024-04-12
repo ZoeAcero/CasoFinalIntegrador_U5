@@ -31,4 +31,14 @@ public class SumatoriaListadoNumerosUI {
             resultadoArea.setText("Números en el rango: " + listaNumeros.toString() + "\n");
             resultadoArea.append("Sumatoria: " + sumatoria);
         });
+
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(3, 2));
+        panel.add(new JLabel("Rango Inicial:"));
+        panel.add(rangoInicialField);
+        panel.add(new JLabel("Rango Final:"));
+        panel.add(rangoFinalField);
+        panel.add(new JLabel(""));
+        panel.add(calcularButton);
 }
