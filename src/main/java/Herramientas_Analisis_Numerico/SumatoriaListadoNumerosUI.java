@@ -21,4 +21,14 @@ public class SumatoriaListadoNumerosUI {
         calcularButton = new JButton("Calcular");
         resultadoArea = new JTextArea(10, 20);
         resultadoArea.setEditable(false);
+
+        calcularButton.addActionListener(e -> {
+            int rangoInicial = Integer.parseInt(rangoInicialField.getText());
+            int rangoFinal = Integer.parseInt(rangoFinalField.getText());
+            SumatoriaListadoNumeros sumatoriaListadoNumeros = new SumatoriaListadoNumeros();
+            List<Integer> listaNumeros = sumatoriaListadoNumeros.listarNumerosEnRango(rangoInicial, rangoFinal);
+            int sumatoria = sumatoriaListadoNumeros.calcularSumatoria(listaNumeros);
+            resultadoArea.setText("Números en el rango: " + listaNumeros.toString() + "\n");
+            resultadoArea.append("Sumatoria: " + sumatoria);
+        });
 }
