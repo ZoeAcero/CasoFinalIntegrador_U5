@@ -31,3 +31,12 @@ public class CalculoCombinacionesUI extends JFrame {
         panel.add(modeloGeneticoField);
         panel.add(calcularCombinacionesButton);
 
+        JPanel resultadoPanel = new JPanel();
+        resultadoPanel.add(resultadoLabel);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.CENTER);
+        getContentPane().add(resultadoPanel, BorderLayout.SOUTH);
+        pack();
+    }
+
