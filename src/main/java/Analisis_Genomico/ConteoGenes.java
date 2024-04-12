@@ -19,8 +19,7 @@ public class ConteoGenes extends JFrame {
 
         contarGenesButton.addActionListener(e -> {
             String secuenciaADN = secuenciaADNField.getText();
-            AnalisisçGenomico analisis = new AnalisisGenomico(secuenciaADN);
-            int cantidadGenes = analisis.contarGenes();
+            int cantidadGenes = contarGenes(secuenciaADN);
             resultadoLabel.setText("Cantidad de genes: " + cantidadGenes);
         });
 
@@ -37,6 +36,21 @@ public class ConteoGenes extends JFrame {
         getContentPane().add(panel, BorderLayout.CENTER);
         getContentPane().add(resultadoPanel, BorderLayout.SOUTH);
         pack();
+    }
+
+    private int contarGenes(String secuenciaADN) {
+        return contarGenesRecursivo(secuenciaADN);
+    }
+
+    private int contarGenesRecursivo(String subsecuenciaADN) {
+        int count = 0;
+        int startCodonIndex = subsecuenciaADN.indexOf("ATG");
+        if (startCodonIndex != -1) {
+            count++;
+            String nextSubsequence = subsecuenciaADN.substring(startCodonIndex + 3); // Skip the start codon
+            count += contarGenesRecursivo(nextSubsequence);
+        }
+        return count;
     }
 
     public static void main(String[] args) {
