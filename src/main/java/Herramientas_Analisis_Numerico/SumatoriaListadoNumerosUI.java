@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SumatoriaListadoNumerosUI {
+public class SumatoriaListadoNumerosUI extends JFrame{
     private final JTextField rangoInicialField;
     private final JTextField rangoFinalField;
     private final JButton calcularButton;
