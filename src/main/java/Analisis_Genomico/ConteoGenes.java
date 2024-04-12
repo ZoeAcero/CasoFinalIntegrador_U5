@@ -24,4 +24,19 @@ public class ConteoGenes extends JFrame {
             resultadoLabel.setText("Cantidad de genes: " + cantidadGenes);
         });
 
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(3, 1));
+        panel.add(new JLabel("Secuencia de ADN:"));
+        panel.add(secuenciaADNField);
+        panel.add(contarGenesButton);
+
+        JPanel resultadoPanel = new JPanel();
+        resultadoPanel.add(resultadoLabel);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.CENTER);
+        getContentPane().add(resultadoPanel, BorderLayout.SOUTH);
+        pack();
+    }
+
     }
