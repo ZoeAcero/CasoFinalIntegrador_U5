@@ -39,4 +39,16 @@ public class ConteoGenes extends JFrame {
         pack();
     }
 
+    public static void main(String[] args) {
+        try {
+            SwingUtilities.invokeLater(() -> {
+                ConteoGenesUI ui = new ConteoGenesUI();
+                ui.setVisible(true);
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+}
+
+
