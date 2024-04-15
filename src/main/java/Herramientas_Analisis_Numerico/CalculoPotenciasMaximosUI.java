@@ -50,4 +50,12 @@ public class CalculoPotenciasMaximosUI extends JFrame{
         getContentPane().add(panel, BorderLayout.NORTH);
         getContentPane().add(scrollPane, BorderLayout.CENTER);
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            CalculoPotenciasMaximosUI ui = new CalculoPotenciasMaximosUI();
+            ui.setVisible(true);
+        });
+    }
+}
 }
