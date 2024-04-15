@@ -9,4 +9,12 @@ public class CalculoPotenciasMaximos {
         }
         return result;
     }
+
+    public long encontrarMaximo(int base, int exponente) {
+        // Calculate the power of the base and exponent
+        long powerResult = calcularPotencia(base, exponente);
+        // Return the maximum of the base, exponent, and power result
+        return Math.max(base, Math.max(exponente, powerResult));
+    }
 }
+
