@@ -28,5 +28,12 @@ public class OrganizacionDocumentosUI extends JFrame{
                 int returnValue = fileChooser.showOpenDialog(null);
                 if (returnValue == JFileChooser.APPROVE_OPTION) {
                     Scanner scanner = null;
+                    try {
+                        File selectedFile = fileChooser.getSelectedFile();
+                        scanner = new Scanner(selectedFile);
+                        StringBuilder text = new StringBuilder();
+                        while (scanner.hasNextLine()) {
+                            text.append(scanner.nextLine()).append("\n");
+                        }
 
         }
