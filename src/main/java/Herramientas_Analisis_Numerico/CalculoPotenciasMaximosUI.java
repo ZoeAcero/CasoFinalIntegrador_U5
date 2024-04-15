@@ -18,4 +18,19 @@ public class CalculoPotenciasMaximosUI extends JFrame{
         calcularButton = new JButton("Calcular");
         resultadoArea = new JTextArea(10, 20);
         resultadoArea.setEditable(false);
+
+
+        calcularButton.addActionListener(e -> {
+            try {
+                int base = Integer.parseInt(baseField.getText());
+                int exponente = Integer.parseInt(exponenteField.getText());
+                CalculoPotenciasMaximos calculoPotenciasMaximos = new CalculoPotenciasMaximos();
+                int potencia = calculoPotenciasMaximos.calcularPotencia(base, exponente);
+                int maximo = calculoPotenciasMaximos.encontrarMaximo(base, exponente);
+                resultadoArea.setText("Potencia: " + potencia + "\n");
+                resultadoArea.append("Máximo: " + maximo);
+            } catch (NumberFormatException ex) {
+                resultadoArea.setText("Please enter valid integer values.");
+            }
+        });
 }
