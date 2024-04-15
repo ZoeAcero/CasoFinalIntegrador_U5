@@ -46,4 +46,15 @@ public class OrganizacionDocumentosUI extends JFrame{
                 }
             });
 
+            ordenarButton.addActionListener(e -> {
+                String[] lines = documentoArea.getText().split("\n");
+                List<String> lineList = Arrays.asList(lines);
+                Collections.sort(lineList);
+                StringBuilder sortedText = new StringBuilder();
+                for (String line : lineList) {
+                    sortedText.append(line).append("\n");
+                }
+                documentoArea.setText(sortedText.toString());
+            });
+
         }
