@@ -19,3 +19,18 @@ public class BusquedaEficienteTextosUI extends JFrame {
         buscarButton = new JButton("Buscar");
         textoArea = new JTextArea();
 
+        buscarButton.addActionListener(e -> {
+            String palabraBuscar = palabraBuscarField.getText().trim();
+            String texto = textoArea.getText();
+            List<Integer> indices = buscarPalabra(texto, palabraBuscar);
+            StringBuilder resultado = new StringBuilder("La palabra '" + palabraBuscar + "' se encuentra en las posiciones: ");
+            for (int indice : indices) {
+                resultado.append(indice).append(", ");
+            }
+            if (resultado.length() > 0) {
+                resultado.setLength(resultado.length() - 2); // Remove trailing comma and space
+            }
+            resultado.append(".");
+            JOptionPane.showMessageDialog(null, resultado.toString(), "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+        });
+
