@@ -23,14 +23,16 @@ public class BusquedaEficienteTextosUI extends JFrame {
             String palabraBuscar = palabraBuscarField.getText().trim();
             String texto = textoArea.getText();
             List<Integer> indices = buscarPalabra(texto, palabraBuscar);
-            StringBuilder resultado = new StringBuilder("La palabra '" + palabraBuscar + "' se encuentra en las posiciones: ");
-            for (int indice : indices) {
-                resultado.append(indice).append(", ");
-            }
-            if (resultado.length() > 0) {
+            StringBuilder resultado = new StringBuilder();
+            if (!indices.isEmpty()) {
+                resultado.append("La palabra '").append(palabraBuscar).append("' se encuentra en las posiciones: ");
+                for (int indice : indices) {
+                    resultado.append(indice).append(", ");
+                }
                 resultado.setLength(resultado.length() - 2); // Remove trailing comma and space
+            } else {
+                resultado.append("La palabra '").append(palabraBuscar).append("' no se encuentra en el texto.");
             }
-            resultado.append(".");
             JOptionPane.showMessageDialog(null, resultado.toString(), "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
         });
 
@@ -46,7 +48,6 @@ public class BusquedaEficienteTextosUI extends JFrame {
         getContentPane().add(panel, BorderLayout.NORTH);
         getContentPane().add(scrollPane, BorderLayout.CENTER);
     }
-
 
     private List<Integer> buscarPalabra(String texto, String palabra) {
         List<Integer> indices = new ArrayList<>();
