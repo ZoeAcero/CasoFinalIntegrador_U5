@@ -34,4 +34,17 @@ public class BusquedaEficienteTextosUI extends JFrame{
             JOptionPane.showMessageDialog(null, resultado.toString(), "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
         });
 
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+        panel.add(new JLabel("Palabra a Buscar:"));
+        panel.add(palabraBuscarField);
+        panel.add(buscarButton);
+
+        JScrollPane scrollPane = new JScrollPane(textoArea);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.NORTH);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+    }
+
     }
