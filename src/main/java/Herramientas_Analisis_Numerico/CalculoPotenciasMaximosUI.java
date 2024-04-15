@@ -58,4 +58,4 @@ public class CalculoPotenciasMaximosUI extends JFrame{
         });
     }
 }
-}
+
