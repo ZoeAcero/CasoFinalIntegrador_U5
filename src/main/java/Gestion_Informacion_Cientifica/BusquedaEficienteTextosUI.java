@@ -10,3 +10,12 @@ public class BusquedaEficienteTextosUI extends JFrame {
     private JButton buscarButton;
     private JTextArea textoArea;
 
+    public BusquedaEficienteTextosUI() {
+        setTitle("Búsqueda Eficiente en Textos");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        palabraBuscarField = new JTextField(20);
+        buscarButton = new JButton("Buscar");
+        textoArea = new JTextArea();
+
