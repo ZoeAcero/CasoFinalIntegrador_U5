@@ -43,4 +43,11 @@ public class CalculoPotenciasMaximosUI extends JFrame{
         panel.add(exponenteField);
         panel.add(new JLabel(""));
         panel.add(calcularButton);
+
+        JScrollPane scrollPane = new JScrollPane(resultadoArea);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.NORTH);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+    }
 }
