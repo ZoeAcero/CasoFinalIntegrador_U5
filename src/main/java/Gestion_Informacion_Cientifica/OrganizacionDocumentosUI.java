@@ -69,4 +69,12 @@ public class OrganizacionDocumentosUI extends JFrame{
             getContentPane().add(scrollPane, BorderLayout.CENTER);
         }
 
-        }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            OrganizacionDocumentosUI ui = new OrganizacionDocumentosUI();
+            ui.setVisible(true);
+        });
+    }
+}
+
+        
