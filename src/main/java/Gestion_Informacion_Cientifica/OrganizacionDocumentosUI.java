@@ -35,5 +35,15 @@ public class OrganizacionDocumentosUI extends JFrame{
                         while (scanner.hasNextLine()) {
                             text.append(scanner.nextLine()).append("\n");
                         }
+                        documentoArea.setText(text.toString());
+                    } catch (FileNotFoundException ex) {
+                        JOptionPane.showMessageDialog(this, "File not found", "Error", JOptionPane.ERROR_MESSAGE);
+                    } finally {
+                        if (scanner != null) {
+                            scanner.close();
+                        }
+                    }
+                }
+            });
 
         }
