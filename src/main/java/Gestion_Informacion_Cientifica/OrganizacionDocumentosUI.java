@@ -18,4 +18,15 @@ public class OrganizacionDocumentosUI extends JFrame{
             setSize(400, 300);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+
+            cargarArchivoButton = new JButton("Cargar Archivo");
+            ordenarButton = new JButton("Ordenar");
+            documentoArea = new JTextArea();
+
+            cargarArchivoButton.addActionListener(e -> {
+                JFileChooser fileChooser = new JFileChooser();
+                int returnValue = fileChooser.showOpenDialog(null);
+                if (returnValue == JFileChooser.APPROVE_OPTION) {
+                    Scanner scanner = null;
+
         }
