@@ -27,5 +27,11 @@ public class BusquedaEficienteTextosUI extends JFrame{
             for (int indice : indices) {
                 resultado.append(indice).append(", ");
             }
+            if (resultado.length() > 0) {
+                resultado.setLength(resultado.length() - 2); // Remove trailing comma and space
+            }
+            resultado.append(".");
+            JOptionPane.showMessageDialog(null, resultado.toString(), "Resultado de la Búsqueda", JOptionPane.INFORMATION_MESSAGE);
+        });
 
     }
