@@ -15,4 +15,17 @@ public class MejoraAlgoritmosUI extends JFrame {
 
         ordenarButton = new JButton("Ordenar");
         numerosArea = new JTextArea();
+
+        ordenarButton.addActionListener(e -> {
+            String[] numerosStr = numerosArea.getText().split("\\s+");
+            int[] numeros = new int[numerosStr.length];
+            try {
+                for (int i = 0; i < numerosStr.length; i++) {
+                    numeros[i] = Integer.parseInt(numerosStr[i]);
+                }
+                Arrays.sort(numeros);
+                StringBuilder sortedNumbers = new StringBuilder();
+                for (int numero : numeros) {
+                    sortedNumbers.append(numero).append(" ");
+                }
 }
