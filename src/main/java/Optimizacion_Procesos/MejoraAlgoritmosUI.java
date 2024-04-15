@@ -28,4 +28,13 @@ public class MejoraAlgoritmosUI extends JFrame {
                 for (int numero : numeros) {
                     sortedNumbers.append(numero).append(" ");
                 }
+                numerosArea.setText(sortedNumbers.toString());
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(this, "Por favor, ingrese solo números", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        });
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+        panel.add(ordenarButton);
 }
