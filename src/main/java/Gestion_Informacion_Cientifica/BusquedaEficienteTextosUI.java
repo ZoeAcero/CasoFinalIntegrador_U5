@@ -58,3 +58,11 @@ public class BusquedaEficienteTextosUI extends JFrame {
         return indices;
     }
 
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            BusquedaEficienteTextosUI ui = new BusquedaEficienteTextosUI();
+            ui.setVisible(true);
+        });
+    }
+}
+
