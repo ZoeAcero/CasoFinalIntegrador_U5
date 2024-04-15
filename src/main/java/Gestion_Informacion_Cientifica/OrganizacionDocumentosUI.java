@@ -57,4 +57,16 @@ public class OrganizacionDocumentosUI extends JFrame{
                 documentoArea.setText(sortedText.toString());
             });
 
+            JPanel panel = new JPanel();
+            panel.setLayout(new FlowLayout());
+            panel.add(cargarArchivoButton);
+            panel.add(ordenarButton);
+
+            JScrollPane scrollPane = new JScrollPane(documentoArea);
+
+            getContentPane().setLayout(new BorderLayout());
+            getContentPane().add(panel, BorderLayout.NORTH);
+            getContentPane().add(scrollPane, BorderLayout.CENTER);
+        }
+
         }
