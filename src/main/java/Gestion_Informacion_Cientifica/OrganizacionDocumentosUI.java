@@ -8,5 +8,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-public class OrganizacionDocumentosUI {
-}
+public class OrganizacionDocumentosUI extends JFrame{
+        private JButton cargarArchivoButton;
+        private JButton ordenarButton;
+        private JTextArea documentoArea;
+
+        public OrganizacionDocumentosUI() {
+            setTitle("Organización de Documentos");
+            setSize(400, 300);
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        }
