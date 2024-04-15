@@ -37,4 +37,19 @@ public class MejoraAlgoritmosUI extends JFrame {
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
         panel.add(ordenarButton);
+
+        JScrollPane scrollPane = new JScrollPane(numerosArea);
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(panel, BorderLayout.NORTH);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            MejoraAlgoritmosUI ui = new MejoraAlgoritmosUI();
+            ui.setVisible(true);
+        });
+    }
 }
+
