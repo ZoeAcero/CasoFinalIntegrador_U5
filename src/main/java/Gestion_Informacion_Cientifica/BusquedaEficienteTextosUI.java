@@ -47,4 +47,14 @@ public class BusquedaEficienteTextosUI extends JFrame{
         getContentPane().add(scrollPane, BorderLayout.CENTER);
     }
 
+    private List<Integer> buscarPalabra(String texto, String palabra) {
+        List<Integer> indices = new ArrayList<>();
+        int index = texto.indexOf(palabra);
+        while (index >= 0) {
+            indices.add(index);
+            index = texto.indexOf(palabra, index + 1);
+        }
+        return indices;
+    }
+
     }
