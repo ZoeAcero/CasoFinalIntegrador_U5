@@ -33,4 +33,14 @@ public class CalculoPotenciasMaximosUI extends JFrame{
                 resultadoArea.setText("Please enter valid integer values.");
             }
         });
+
+
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(3, 2));
+        panel.add(new JLabel("Base:"));
+        panel.add(baseField);
+        panel.add(new JLabel("Exponente:"));
+        panel.add(exponenteField);
+        panel.add(new JLabel(""));
+        panel.add(calcularButton);
 }
