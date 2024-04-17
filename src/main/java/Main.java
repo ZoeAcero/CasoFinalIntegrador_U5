@@ -62,5 +62,19 @@ public class Main extends JFrame {
         gbc.gridy = 3;
         panel.add(subtitulo2, gbc);
 
+        // Agregar el panel de títulos al panel principal
+        gbc.gridx = 1; // Posición horizontal para el panel de títulos
+        gbc.gridy = 0; // Posición vertical para el panel de títulos
+        gbc.gridheight = 3; // Hacer que el panel de títulos ocupe 3 celdas en la dirección vertical
+        panel.add(titlePanel, gbc);
+
+        // Agregar un panel vacío a cada lado de los botones para empujarlos hacia el centro
+        JPanel emptyPanel1 = new JPanel();
+        emptyPanel1.setOpaque(false); // Hacer que el panel sea transparente
+        gbc.gridx = 0; // Posición horizontal para el primer panel vacío
+        gbc.gridy = 4; // Posición vertical para el primer panel vacío
+        gbc.gridheight = 4; // Hacer que el panel vacío ocupe 4 celdas en la dirección vertical
+        panel.add(emptyPanel1, gbc);
+
     }
 
