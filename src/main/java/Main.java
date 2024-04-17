@@ -1,7 +1,7 @@
 import javax.swing.*;
-import javax.swing.colorchooser.AbstractColorChooserPanel;
 
 import Analisis_Genomico.*;
+import Decoracion.Decoracion;
 import Gestion_Informacion_Cientifica.*;
 import Herramientas_Analisis_Numerico.*;
 import Optimizacion_Procesos.*;
