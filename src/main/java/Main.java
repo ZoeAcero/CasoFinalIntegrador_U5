@@ -161,7 +161,7 @@ public class Main extends JFrame {
         button2.addActionListener(new ActionListener() { // Búsqueda Eficiente en Textos
             @Override
             public void actionPerformed(ActionEvent e) {
-                BúsquedaTextosGUI ventana = new BúsquedaTextosGUI();
+                BusquedaEficienteTextosUI ventana = new BusquedaEficienteTextosUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
@@ -170,7 +170,7 @@ public class Main extends JFrame {
         button3.addActionListener(new ActionListener() { // Organización de Documentos
             @Override
             public void actionPerformed(ActionEvent e) {
-                OrganizaciónDocGUI ventana = new OrganizaciónDocGUI();
+                OrganizacionDocumentosUI ventana = new OrganizacionDocumentosUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
