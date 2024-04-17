@@ -197,7 +197,7 @@ public class Main extends JFrame {
         button6.addActionListener(new ActionListener() { // Mejora de Algoritmos
             @Override
             public void actionPerformed(ActionEvent e) {
-                MejoraAlgoritmosGUI ventana = new MejoraAlgoritmosGUI();
+                MejoraAlgoritmosUI ventana = new MejoraAlgoritmosUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
@@ -206,7 +206,7 @@ public class Main extends JFrame {
         button7.addActionListener(new ActionListener() { // Cálculo de Potencias y Máximos
             @Override
             public void actionPerformed(ActionEvent e) {
-                CálculoPotenciasYMáxGUI ventana = new CálculoPotenciasYMáxGUI();
+                CalculoPotenciasMaximosUI ventana = new CalculoPotenciasMaximosUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
@@ -238,5 +238,5 @@ public class Main extends JFrame {
 }
 
 
-    
+
 
