@@ -110,6 +110,21 @@ public class Main extends JFrame {
         button5.setMinimumSize(buttonSize);
         button5.setMaximumSize(buttonSize);
 
+        JButton button6 = new JButton("Mejora de Algoritmos \u200B⬆\uFE0F\u200B \uD83D\uDCBB\u200B");
+        button6.setPreferredSize(buttonSize);
+        button6.setMinimumSize(buttonSize);
+        button6.setMaximumSize(buttonSize);
+
+        JButton button7 = new JButton("Cálculo de Potencias y Máximos \uD83D\uDCAA\uD83C\uDFFC\u200B");
+        button7.setPreferredSize(buttonSize);
+        button7.setMinimumSize(buttonSize);
+        button7.setMaximumSize(buttonSize);
+
+        JButton button8 = new JButton("Sumatoria y Listado de Números \uD83D\uDCC3\u200B➕");
+        button8.setPreferredSize(buttonSize);
+        button8.setMinimumSize(buttonSize);
+        button8.setMaximumSize(buttonSize);
+
 
     }
 
