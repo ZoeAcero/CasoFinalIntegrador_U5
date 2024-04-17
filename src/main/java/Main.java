@@ -179,7 +179,7 @@ public class Main extends JFrame {
         button4.addActionListener(new ActionListener() { // Conteo de Genes
             @Override
             public void actionPerformed(ActionEvent e) {
-                ConteoGenesGUI ventana = new ConteoGenesGUI();
+                ConteoGenesUI ventana = new ConteoGenesUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
@@ -188,7 +188,7 @@ public class Main extends JFrame {
         button5.addActionListener(new ActionListener() { // Cálculo de Combinaciones Genéticas
             @Override
             public void actionPerformed(ActionEvent e) {
-                CálculoComGenGUI ventana = new CálculoComGenGUI();
+                CalculoCombinacionesUI ventana = new CalculoCombinacionesUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
