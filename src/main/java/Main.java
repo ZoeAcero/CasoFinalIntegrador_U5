@@ -194,6 +194,37 @@ public class Main extends JFrame {
             }
         });
 
+        button6.addActionListener(new ActionListener() { // Mejora de Algoritmos
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MejoraAlgoritmosGUI ventana = new MejoraAlgoritmosGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        button7.addActionListener(new ActionListener() { // Cálculo de Potencias y Máximos
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CálculoPotenciasYMáxGUI ventana = new CálculoPotenciasYMáxGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        button8.addActionListener(new ActionListener() { // suma y listado de números
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SumatoriaYListadoNumGUI ventana = new SumatoriaYListadoNumGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        // Centrar el marco en la pantalla
+        setLocationRelativeTo(null);
+    }
+
 
     }
 
