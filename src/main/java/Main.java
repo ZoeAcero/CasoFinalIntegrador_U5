@@ -207,7 +207,7 @@ public class Main extends JFrame {
         button8.addActionListener(new ActionListener() { // suma y listado de números
             @Override
             public void actionPerformed(ActionEvent e) {
-                SumatoriaYListadoNumGUI ventana = new SumatoriaYListadoNumGUI();
+                SumatoriaListadoNumerosUI ventana = new SumatoriaListadoNumerosUI();
                 ventana.setLocationRelativeTo(null);
                 ventana.setVisible(true);
             }
