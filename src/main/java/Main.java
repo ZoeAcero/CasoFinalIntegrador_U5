@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.colorchooser.AbstractColorChooserPanel;
+
 import Analisis_Genomico.*;
 import Gestion_Informacion_Cientifica.*;
 import Herramientas_Analisis_Numerico.*;
@@ -20,7 +22,7 @@ public class Main extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Crear un panel para agregar componentes
-        JPanel panel = new DecoPanel();
+        JPanel panel = new Decoracion
         panel.setLayout(new GridBagLayout()); // Usar GridBagLayout
         panel.setBackground(new Color(255, 255, 255, 200)); // Blanco semi-transparente
         panel.setOpaque(false); // Hacer que panelPrincipal sea
