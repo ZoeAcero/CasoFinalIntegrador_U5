@@ -158,6 +158,42 @@ public class Main extends JFrame {
             }
         });
 
+        button2.addActionListener(new ActionListener() { // Búsqueda Eficiente en Textos
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BúsquedaTextosGUI ventana = new BúsquedaTextosGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        button3.addActionListener(new ActionListener() { // Organización de Documentos
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                OrganizaciónDocGUI ventana = new OrganizaciónDocGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        button4.addActionListener(new ActionListener() { // Conteo de Genes
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ConteoGenesGUI ventana = new ConteoGenesGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
+        button5.addActionListener(new ActionListener() { // Cálculo de Combinaciones Genéticas
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CálculoComGenGUI ventana = new CálculoComGenGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
 
     }
 
