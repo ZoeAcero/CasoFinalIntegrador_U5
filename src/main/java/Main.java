@@ -125,6 +125,39 @@ public class Main extends JFrame {
         button8.setMinimumSize(buttonSize);
         button8.setMaximumSize(buttonSize);
 
+        // Agregar botones al panel con las restricciones adecuadas
+        gbc.gridx = (int) -0.5; // Posición horizontal para los primeros 4 botones
+        gbc.gridheight = 1; // Hacer que los botones ocupen 1 celda en la dirección vertical
+        gbc.gridy = 4; // Posición vertical para el botón 1
+        panel.add(button1, gbc);
+        gbc.gridy = 5; // Posición vertical para el botón 2
+        panel.add(button2, gbc);
+        gbc.gridy = 6; // Posición vertical para el botón 3
+        panel.add(button3, gbc);
+        gbc.gridy = 7; // Posición vertical para el botón 4
+        panel.add(button4, gbc);
+
+        gbc.gridx = 1; // Posición horizontal para los últimos 4 botones
+        gbc.gridheight = 1; // Hacer que los botones ocupen 1 celda en la dirección vertical
+        gbc.gridy = 4; // Posición vertical para el botón 5
+        panel.add(button5, gbc);
+        gbc.gridy = 5; // Posición vertical para el botón 6
+        panel.add(button6, gbc);
+        gbc.gridy = 6; // Posición vertical para el botón 7
+        panel.add(button7, gbc);
+        gbc.gridy = 7; // Posición vertical para el botón 8
+        panel.add(button8, gbc);
+
+        // Manejar eventos de los botones
+        button1.addActionListener(new ActionListener() { // Gestión de Fechas
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                GestiónFechasGUI ventana = new GestiónFechasGUI();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+            }
+        });
+
 
     }
 
