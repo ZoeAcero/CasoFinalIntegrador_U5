@@ -26,5 +26,26 @@ public class Main extends JFrame {
         panel.setOpaque(false); // Hacer que panelPrincipal sea
         panel.setPreferredSize(new Dimension(getWidth(), getHeight())); // Establecer el tamaño del panel igual al del marco principal
         add(panel);
+
+        // Configurar restricciones para el diseño de cuadrícula
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.NONE;
+        gbc.weightx = 1.0; // Dar a todos los componentes el mismo espacio horizontal
+        gbc.insets = new Insets(5, 5, 5, 5); // Margen entre componentes
+        gbc.anchor = GridBagConstraints.CENTER; // Centrar los componentes en su celda
+
+        // Crear un panel para los títulos y subtítulos
+        JPanel titlePanel = new JPanel();
+        titlePanel.setLayout(new BoxLayout(titlePanel, BoxLayout.Y_AXIS));
+        titlePanel.setOpaque(false); // Hacer que el panel sea transparente
+
+        // Título Principal "A.G.O.D."
+        JLabel tituloPrincipal = new JLabel("<html><font color='grey'>A.</font><font color='grey'>G.</font><font color='blue'>O.</font><font color='grey'>D.</font></html>");
+        tituloPrincipal.setFont(new Font("Ardela Edge ARDELA EDGE X03 Extra Bold", Font.BOLD, 142));
+        tituloPrincipal.setAlignmentX(Component.CENTER_ALIGNMENT); // Centrar el título
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.gridy = 0;
+        panel.add(tituloPrincipal, gbc);
+
     }
 
