@@ -76,5 +76,20 @@ public class Main extends JFrame {
         gbc.gridheight = 4; // Hacer que el panel vacío ocupe 4 celdas en la dirección vertical
         panel.add(emptyPanel1, gbc);
 
+        JPanel emptyPanel2 = new JPanel();
+        emptyPanel2.setOpaque(false); // Hacer que el panel sea transparente
+        gbc.gridx = 2; // Posición horizontal para el segundo panel vacío
+        panel.add(emptyPanel2, gbc);
+
+        // Tamaño para los botones
+        Dimension buttonSize = new Dimension(290, 35); // Puedes ajustar estos valores a tu gusto
+
+        // Botones del panel para interactuar con las clases
+        JButton button1 = new JButton("Gestión de Fechas 📆");
+        button1.setPreferredSize(buttonSize);
+        button1.setMinimumSize(buttonSize);
+        button1.setMaximumSize(buttonSize);
+
+
     }
 
