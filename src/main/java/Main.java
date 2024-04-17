@@ -149,14 +149,6 @@ public class Main extends JFrame {
         panel.add(button8, gbc);
 
         // Manejar eventos de los botones
-        button1.addActionListener(new ActionListener() { // Gestión de Fechas
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                GestiónFechasGUI ventana = new GestiónFechasGUI();
-                ventana.setLocationRelativeTo(null);
-                ventana.setVisible(true);
-            }
-        });
 
         button2.addActionListener(new ActionListener() { // Búsqueda Eficiente en Textos
             @Override
