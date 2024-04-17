@@ -90,6 +90,26 @@ public class Main extends JFrame {
         button1.setMinimumSize(buttonSize);
         button1.setMaximumSize(buttonSize);
 
+        JButton button2 = new JButton("Búsqueda Eficiente en Textos \uD83D\uDD0D");
+        button2.setPreferredSize(buttonSize);
+        button2.setMinimumSize(buttonSize);
+        button2.setMaximumSize(buttonSize);
+
+        JButton button3 = new JButton("Organización de Documentos \uD83D\uDCC4\u200B");
+        button3.setPreferredSize(buttonSize);
+        button3.setMinimumSize(buttonSize);
+        button3.setMaximumSize(buttonSize);
+
+        JButton button4 = new JButton("Conteo de Genes 🔬");
+        button4.setPreferredSize(buttonSize);
+        button4.setMinimumSize(buttonSize);
+        button4.setMaximumSize(buttonSize);
+
+        JButton button5 = new JButton("Cálculo de Combinaciones Genéticas 🔬🔀");
+        button5.setPreferredSize(buttonSize);
+        button5.setMinimumSize(buttonSize);
+        button5.setMaximumSize(buttonSize);
+
 
     }
 
