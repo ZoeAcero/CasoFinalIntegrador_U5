@@ -22,7 +22,7 @@ public class Main extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Crear un panel para agregar componentes
-        JPanel panel = new Decoracion
+        JPanel panel = new Decoracion();
         panel.setLayout(new GridBagLayout()); // Usar GridBagLayout
         panel.setBackground(new Color(255, 255, 255, 200)); // Blanco semi-transparente
         panel.setOpaque(false); // Hacer que panelPrincipal sea
